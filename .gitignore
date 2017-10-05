@@ -1,0 +1,23 @@
+#Typical files to ignore
+#+ log files
+#+ zip files
+#+ testing asset files 
+#+ help links (https://help.github.com/articles/ignorings-files)
+#+   
+
+#+.gitignore file should go into root directory..
+#+ able to use basic regex for telling git what sort of files to ignore.
+#
+#+ negate expression w/!
+#+ ignoring all files in directory with ({path}/)
+#+ able to appply [0-9] on files to ignore too
+#+ (*) wildcard .{type of file} -- to ignore all files of that type
+ 
+tempFile.txt
+*.zip
+*.gz
+log/*.log
+log/*.log.[0-9]
+assets/photoshop/
+assets/videos/
+!assets/videos/tour_*.mp4
